@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Playwrite+AR+Guides&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght,YOPQ@100..900,300&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+AR+Guides&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Young+Serif&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -12,12 +15,21 @@ body {
   min-height: 100vh;
   line-height: 1.5;
   font-family: Arial, sans-serif;
+  font-family: "Overpass", sans-serif;
 }
 
 header {
+  max-width: 1440px;
+  margin-inline: auto;
   padding: 59px 167px 155px 167px;
-  background-image: linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+  background-image:
+    url(./images/bg-pattern-intro-desktop.svg), linear-gradient(135deg, #ff8f71 0%, #ff3e55 100%);
+  background-position-y: -1350px, center;
+  background-position-x: -400px, center;
+  background-repeat: no-repeat;
   border-end-start-radius: 100px;
+  position: relative;
+  overflow: hidden;
 }
 
 nav {
@@ -125,3 +137,285 @@ li a:hover {
 .hero p {
   margin-bottom: 43px;
 }
+
+.hero div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.hero div :first-child {
+  padding: 15px 17px;
+  border-radius: 28px;
+  background-color: white;
+  border: none;
+  color: #ff505c;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.hero div :first-child:hover {
+  color: white;
+  background-color: #ff7b86;
+  transition: 0.3s;
+}
+
+.hero div :last-child {
+  padding: 15px 17px;
+  border-radius: 28px;
+  border: 1px solid white;
+  background-color: #ff505c;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+
+.hero div :last-child:hover {
+  color: #ff505c;
+  background-color: white;
+  transition: 0.3s;
+}
+
+main {
+  max-width: 1440px;
+  margin-inline: auto;
+  overflow-x: hidden;
+}
+
+.design {
+  margin-top: 150px;
+  padding-left: 165px;
+}
+
+.design > h2 {
+  text-align: center;
+  color: #1f3e5a;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 93px;
+}
+
+.design > div {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  width: 50%;
+}
+
+.content h3 {
+  color: #1f3e5a;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.content p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #4c5862;
+  line-height: 28px;
+  max-width: 540px;
+}
+
+.content :nth-child(2) {
+  margin-bottom: 64px;
+}
+
+.cover {
+  padding: 20px;
+  width: 50%;
+  position: relative;
+  height: 882px;
+}
+
+.cover :first-child {
+  position: absolute;
+  height: 100%;
+}
+
+.cover :last-child {
+  position: absolute;
+  height: 100%;
+}
+
+.state {
+  height: 400px;
+  background-color: #3a3c5a;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  margin-bottom: 116px;
+  margin-top: 57px;
+  background-image: url(./images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position-y: -500px;
+  background-position-x: -200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 165px;
+  position: relative;
+}
+
+.state img {
+  position: absolute;
+  z-index: 1;
+  left: 150px;
+  bottom: -110px;
+}
+
+.state div {
+  color: white;
+  max-width: 540px;
+}
+
+.state div h2 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: -1.2px;
+  margin-bottom: 5px;
+}
+
+.state div p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.5px;
+}
+
+.free-open {
+  height: 880px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 165px;
+  align-items: center;
+  position: relative;
+  /*background-color: #ff3e55;*/
+}
+.laptor {
+  position: absolute;
+  z-index: 1;
+  height: 786px;
+  left: -275px;
+}
+
+.free-open div {
+  max-width: 540px;
+}
+
+.free-open h3{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #1f3e5a;
+  margin-bottom: 16px;
+}
+
+.free-open p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #4c5862;
+}
+
+.free-open div :nth-child(2){
+  margin-bottom: 64px;
+}
+
+.footer {
+  min-height: 359px;
+  background-color: #24242C;
+  border-top-right-radius: 100px;
+  padding: 70px 165px;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin-inline: auto;
+  font-family: "Ubuntu";
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer ul :first-child {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 11px;
+}
+
+@media(max-width: 700px) {
+header {
+  width: 375px;
+  padding: 56px 24px 156px 24px;
+}
+
+nav {
+  margin-bottom: 108px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: none;
+}
+
+.nav-buttons {
+  display: none;
+}
+
+.hamburger {
+  display: inline-block;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 600;
+  width: 300px;
+  margin-inline: auto;
+}
+
+.design {
+  padding: 100px 24px;
+}
+
+.design div{
+  flex-direction: column-reverse;
+}
+
+.content {
+  width: 100%;
+}
+
+.cover {
+  width: 100%;
+  height: 326px;
+}
+
+/*.cover img {
+  width: 326px;
+  height: 103px;
+}*/
+
+.cover :first-child{
+  width: 326px;
+  height: 326px;
+  display: none;
+}
+
+.cover :last-child{
+  width: 326px;
+  height: 326px;
+}
+}
+
+
